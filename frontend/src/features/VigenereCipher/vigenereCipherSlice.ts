@@ -23,11 +23,7 @@ export const loadingSlice = (state: RootState) => state.vigenereCipher.loading;
 const vigenereCipherSlice = createSlice({
   name: 'VigenereCipher',
   initialState,
-  reducers: {
-    getMessageToEncode: (state, action: PayloadAction<string>) => {
-      state.messageToEncode = action.payload;
-    },
-  },
+  reducers: {},
   extraReducers: (builder) => {
     builder
       .addCase(encodeTheMessage.pending, (state) => {
@@ -60,4 +56,3 @@ const vigenereCipherSlice = createSlice({
 });
 
 export const vigenereCipherReducer = vigenereCipherSlice.reducer;
-export const {getMessageToEncode} = vigenereCipherSlice.actions;
