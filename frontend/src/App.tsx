@@ -1,9 +1,10 @@
+import VigenereCipher from './features/VigenereCipher/components/VigenereCipher.tsx';
 
 const App = () => {
 
   return (
     <>
-      I'm starting my home work #75! ^_^
+      <VigenereCipher/>
     </>
   );
 };
